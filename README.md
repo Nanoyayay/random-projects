@@ -1,4 +1,5 @@
 # random-projects
+Updates : Cody Version 1.1.0!
 some random things i make
 dont steal
 i will be sad
