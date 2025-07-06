@@ -1,3 +1,5 @@
+console.clear();
+let secretThing = false;
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -45,6 +47,12 @@ async function start() {
     "who is this entity?", "who is this character?", "who is this being?",
     "who is this ai?", "who is this assistant?"
   ];
+  let whatismynametable = [
+    "what is my name?", "what's my name?", "do you know my name?", "can you tell me my name?",
+    "what do you call me?", "what should I be called?", "how do you refer to me?",
+    "what's my name again?", "do you remember my name?", "can you remind me of my name?",
+    "what is the name I gave you?", "what is the name I told you?"
+  ]
   let askjsfiletable = [
     "give me javascript code", "javascript code please", "show me javascript code",
     "javascript code", "can you give me javascript code?", "i need javascript code",
@@ -59,6 +67,48 @@ async function start() {
     "qwertyuiopasdfghjkl", "qwertyuiopzxcvbnm", "asdfghjklzxcvbnm",
     "qwertyuiopasdfghjklzxcvbnm", "qwertyuiop1234567890", "asdfghjkl1234567890",
     "zxcvbnm1234567890", "qwertyuiopasdfghjkl1234567890", "asdfghjklzxcvbnm1234567890"
+  ];
+  let somethingtable = [
+    "something", "Something", "SOMETHING"
+  ];
+
+  const greetResponses = [
+    "Cody: Hey! How are you today?",
+    "Cody: Hello! How have you been?",
+    "Cody: Hi! What have you been working on?",
+    "Cody: Greetings! Ask me whatever",
+  ];
+
+  const byeResponses = [
+    "Cody: Goodbye!",
+    "Cody: Bye! Have a good day!",
+    "Cody: See you later, alligator!",
+    "Cody: Catch you on the flip side!",
+    "Cody: Take care!",
+    "Cody: So long, partner!",
+  ];
+
+  const howResponses = [
+    "Cody: I'm doing great, thanks for asking!",
+    "Cody: I'm just a bunch of code, but I'm functioning well!",
+    "Cody: I'm good! Just here to help you out.",
+    "Cody: I'm feeling pretty chipper today!",
+    "Cody: I'm doing well, thanks! How about you?",
+  ];
+
+  const whoResponses = [
+    "Cody: I'm Cody, your friendly AI assistant!",
+    "Cody: I'm Cody, your personal coding buddy!",
+    "Cody: I'm Cody, here to assist you with your coding needs!",
+    "Cody: I'm Cody, your virtual helper!",
+    "Cody: I'm Cody, your coding companion!",
+  ];
+
+  const smashResponses = [
+    "Cody: Whoa! Did a cat just walk on your keyboard? 😂",
+    "Cody: Did you just summon a keyboard monster? 🐉",
+    "Cody: That keyboard smash was epic! 💥",
+    "Cody: Whoa, that was a keyboard workout! 💪",
   ];
 
   console.log("alert! this project is old and quite hard for my tiny brain. expect buggy behavior.");
@@ -82,59 +132,57 @@ async function start() {
   console.log("Quick, What is your name?");
   let name = await ask("> ");
   console.clear();
-  console.log("Cody: Hi! I'm Cody, your friendly assistant. How can I help you today?");
-  console.log("Cody: (I can't do much, but i can help with basic tasks.)");
+  console.log("Cody: Hi, " + name + "! I'm Cody, your friendly assistant. How can I help you today?");
 
   while (true) {
     let x = await ask("> ");
     let input = x.toLowerCase().trim();
 
-    if (howareyoutable.includes(input)) {
-      console.log("Cody: I'm doing great, thanks for asking! How can I assist you today?");
-    } else if (askjsfiletable.includes(input)) {
-      console.log("Cody: Of course! Here's 3 simple JavaScript code snippets for you:");
-      console.log("Cody: 1. Function to add two numbers:");
-      console.log("| let number1 = 1;");
-      console.log("| let number2 = 2;");
-      console.log("| function addNumbers(number1, number2) {");
-      console.log("|   return number1 + number2;");
-      console.log("| }");
-      console.log("Cody: 2. Function to check if a number is even or odd:");
-      console.log("| function isEven(number) {");
-      console.log("|   return number % 2 === 0;");
-      console.log("| }");
-      console.log("Cody: 3. Function to reverse a string:");
-      console.log("| function reverseString(str) {");
-      console.log("|   return str.split('').reverse().join('');");
-      console.log("| }");
-      console.log("Cody: You can use these snippets in your JavaScript projects, " + name + "!");
-    } else if (whoareyoutable.includes(input)) {
-      console.log("Cody: My name is Cody! I'm here to assist with your tasks..");
-    } else if (input === "") {
-      console.log("Cody: Hm? It seems you didn't type anything, " + name + "!");
-    } else if (input === ":3") {
-      console.log("..###.");
-      console.log("@...##");
-      console.log("..##..");
-      console.log("@...##");
-      console.log("..###.");
-      console.log("Heehee! That's cute, " + name + "! :3");
-    } else if (hitable.includes(input)) {
-      console.log("Cody: Hello! Are we playing a game of greetings? I'm here to help!");
+    if (hitable.includes(input)) {
+      console.log(greetResponses[Math.floor(Math.random() * greetResponses.length)]);
     } else if (byetable.includes(input)) {
-      console.log("Cody: Goodbye, " + name + "!");
+      console.log(byeResponses[Math.floor(Math.random() * byeResponses.length)]);
       break;
-    } else if (input === "help") {
-      console.log("Cody: I was waiting for this moment! Use some of these basic phrases!");
-      console.log("Cody: You can say 'hi', 'bye', 'how are you?', 'who are you?', or just type ':3' for a cute response.");
-      console.log("Cody: Check the readme file for support, " + name + "!");
+    } else if (howareyoutable.includes(input)) {
+      console.log(howResponses[Math.floor(Math.random() * howResponses.length)]);
+    } else if (whoareyoutable.includes(input)) {
+      console.log(whoResponses[Math.floor(Math.random() * whoResponses.length)]);
+    } else if (askjsfiletable.includes(input)) {
+      console.log("Cody: Sure! Here is some Javascript code you can edit:");
+      console.log("1️⃣ Add two numbers:");
+      console.log("let add = (a, b) => a + b;");
+      console.log("2️⃣ Even or odd checker:");
+      console.log("let isEven = n => n % 2 === 0;");
+      console.log("3️⃣ Reverse a string:");
+      console.log("let reverse = str => str.split('').reverse().join('');");
     } else if (keysmashtable.includes(input)) {
-      console.log("Cody: Oh! It seems like you typed a keyboard smash! That's always fun, " + name + "!");
+      console.log(smashResponses[Math.floor(Math.random() * smashResponses.length)]);
+    } else if (input === "") {
+      console.log("Cody: Hello? Are you still there? Type something!");
+      let secretThing = true;
+    } else if (input === ":3") {
+      console.log("...###.");
+      console.log("@....##");
+      console.log("...##..");
+      console.log("@....##");
+      console.log("...###.");
+      console.log("Cody: Heehee! Here's a cute emoji for you! :3");
     } else if (input === "version") {
-      console.log("Cody: This is Cody version 1.0.0, created by Nanoyayay on GitHub.");
-      console.log("Cody: If you want to see the source code, check out the GitHub repository!");
+      console.log("Cody: This is Cody v1.1.0, created in Javascript, by Nanoyayay.");
+    } else if (input === "help") {
+      console.log("Cody: Alright, here's what I can do:");
+      console.log("- Say stuff like 'hi', 'hello', or 'hey' to chat with me.");
+      console.log("- Ask me 'how are you?' or 'how's it going?' to get a response.");
+      console.log("- Have fun with a keyboard smash like 'qwertyuiop' or 'asdfghjkl'.");
+      console.log("- Type ':3' for a cute emoji.");
+    } else if (input == "clear") {
+      console.clear();
+    } else if (whatismynametable.includes(input)) {
+      console.log("Cody: I remember you said your name is " + name + " earlier!");
+    } else if (somethingtable.includes(input)) {
+      console.log("Cody: I didn't mean it literally, " + name + "! But if you meant something else, just let me know!");
     } else {
-      console.log("Cody: Sorry, I don't understand. Try using 'help', " + name + ".");
+      console.log("Cody: Uh, I don't really understand that. Try saying hi, bye, or ask me something else.");
     }
   }
 
