@@ -1,12 +1,13 @@
 # random-projects
 Updates : Cody Version 1.1.0!
-some random things i make
-dont steal
-i will be sad
+Goku.html released! Give goku wisdom and share top secrets ( dw, no cookies. )
+ some random things i make
+ dont steal
+ i will be sad
 
-Help Manuals:
-Cody.JS
- A snippet of code showing all the commands
+ Help Manuals:
+ Cody.JS
+  A snippet of code showing all the commands
    let hitable = [
     "hi", "hello", "hey", "howdy", "greetings", "sup", "yo", "what's up",
     "howdy-doo", "hi there", "hey there", "greetings and salutations"
@@ -51,16 +52,16 @@ Cody.JS
     "qwertyuiopasdfghjklzxcvbnm", "qwertyuiop1234567890", "asdfghjkl1234567890",
     "zxcvbnm1234567890", "qwertyuiopasdfghjkl1234567890", "asdfghjklzxcvbnm1234567890"
   ];
- If this looks like a bunch of ones and zeros, get a programmer to help you.
-Calc.PY
- A basic calculator
- Add, subtract, divide or multiply numbers.
- Many things you do may cause a syntax error. Don't worry about it, unless you do something like "1+1" and get one. Contact me if that happens.
- You are NOT able to set variables, this isn't a scientific calculator. If you do "x = 1", it won't work. Try doing "x" and you'll get hit with an error saying "not denified."
-HackPrank.HTML
- Just a html script to prank friends. Does nothing malicious.
- A rainbow text appears saying "haha u hav been heked"
- Then there is a button that says "unhek me" and upon clicking explodes everything.
- Just the website. Nothing else.
- Good to prank friends.
- ..please do not take this seriously.
+  If this looks like a bunch of ones and zeros, get a programmer to help you.
+ Calc.PY
+  A basic calculator
+  Add, subtract, divide or multiply numbers.
+  Many things you do may cause a syntax error. Don't worry about it, unless you do something like "1+1" and get one. Contact me if that happens.
+  You are NOT able to set variables, this isn't a scientific calculator. If you do "x = 1", it won't work. Try doing "x" and you'll get hit with an error saying "not denified."
+ HackPrank.HTML
+  Just a html script to prank friends. Does nothing malicious.
+  A rainbow text appears saying "haha u hav been heked"
+  Then there is a button that says "unhek me" and upon clicking explodes everything.
+  Just the website. Nothing else.
+  Good to prank friends.
+  ..please do not take this seriously.
