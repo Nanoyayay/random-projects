@@ -1,0 +1,102 @@
+#hack website to prank your friends
+#this is a simple prank website that displays a message and has a button to "unhek" the user.
+#when the button is clicked, it animates the text and button to "explode" and disappear.
+#it uses HTML, CSS, and JavaScript to create the effect.
+#do not distibute this code without permission.
+#this code is for educational purposes only.
+#enjoy the prank!
+#-------------------------------
+#Coded by Nanoyayay on github.com - Do not distribute
+#-------------------------------
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8"/>
+  <title>haha u be hek</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    .rainbow-text {
+      font-size: 48px;
+      font-weight: bold;
+      background-image: linear-gradient(
+        90deg,
+        red,
+        orange,
+        yellow,
+        green,
+        cyan,
+        blue,
+        violet
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: rainbow 4s infinite linear;
+    }
+
+    @keyframes rainbow {
+      0% { background-position: 0%;}
+      100% { background-position: 100%;}
+    }
+
+    #unhekBtn {
+      margin-top: 40px;
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: red;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+    }
+
+    #unhekBtn:hover {
+      background-color: darkred;
+    }
+
+    .explode {
+      animation: explode 0.7s forwards;
+    }
+
+    @keyframes explode {
+      0% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.5) rotate(180deg);
+        opacity: 0.5;
+      }
+      100% {
+        transform: scale(0) rotate(720deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="rainbow-text" id="heckedText">haha u hav been heked</div>
+  <button id="unhekBtn">unhek me</button>
+
+  <script>
+    document.getElementById("unhekBtn").addEventListener("click", function() {
+      const text = document.getElementById("heckedText");
+      const btn = document.getElementById("unhekBtn");
+      text.classList.add("explode");
+      btn.classList.add("explode");
+
+      // Optional: Remove elements after explosion
+      setTimeout(() => {
+        text.style.display = "none";
+        btn.style.display = "none";
+      }, 700);
+    });
+  </script>
+
+
+</body></html>
