@@ -1,12 +1,12 @@
 # random-projects
 Updates : Cody Version 1.1.0!
-Goku.html released! Give goku wisdom and share top secrets ( dw, no cookies. )
+PasswordGenerator.py released! My first code using databases!!
  some random things i make
  dont steal
  i will be sad
 
  Help Manuals:
- Cody.JS
+ Cody.js
   A snippet of code showing all the commands
    let hitable = [
     "hi", "hello", "hey", "howdy", "greetings", "sup", "yo", "what's up",
@@ -53,7 +53,7 @@ Goku.html released! Give goku wisdom and share top secrets ( dw, no cookies. )
     "zxcvbnm1234567890", "qwertyuiopasdfghjkl1234567890", "asdfghjklzxcvbnm1234567890"
   ];
   If this looks like a bunch of ones and zeros, get a programmer to help you.
- Calc.PY
+ Calc.py
   A basic calculator
   Add, subtract, divide or multiply numbers.
   Many things you do may cause a syntax error. Don't worry about it, unless you do something like "1+1" and get one. Contact me if that happens.
@@ -65,3 +65,5 @@ Goku.html released! Give goku wisdom and share top secrets ( dw, no cookies. )
   Just the website. Nothing else.
   Good to prank friends.
   ..please do not take this seriously.
+PasswordGenerator.py
+ just gets text from a priv database then spits it out to you, ur able to change the strength, and you have the option to get... a receipt. i felt like it, dont blame me.
