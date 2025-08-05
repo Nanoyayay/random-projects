@@ -1,6 +1,7 @@
 # random-projects
 Updates : Cody Version 1.1.0!
 PasswordGenerator.py released! My first code using databases!!
+unclebob.py - Your Coding Companion!
  some random things i make
  dont steal
  i will be sad
@@ -67,3 +68,5 @@ PasswordGenerator.py released! My first code using databases!!
   ..please do not take this seriously.
 PasswordGenerator.py
  just gets text from a priv database then spits it out to you, ur able to change the strength, and you have the option to get... a receipt. i felt like it, dont blame me.
+unclebob.py
+ a coding companion that gives useful information... probably not useful
